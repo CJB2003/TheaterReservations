@@ -11,7 +11,11 @@ public class TheaterApp {
         //prompt user to enter name
         System.out.print("Please enter your name: ");
         String userName = myScanner.nextLine();
-        String[]
+
+        //creating array names to split by space
+        String[] names = userName.split(" ");
+        //I always like checking to see what is being split even if I know
+        System.out.println(Arrays.toString(names));
 
         //prompt user to choose a date in specific format
         System.out.print("What date will you be coming (MM/dd/yyyy): ");
