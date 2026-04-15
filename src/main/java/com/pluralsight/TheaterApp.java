@@ -26,7 +26,7 @@ public class TheaterApp {
         String userDate = myScanner.nextLine();
 
         //prompt user to input how many tickets they want
-        System.out.println("How many tickets would you like? ");
+        System.out.print("How many tickets would you like? ");
         int userTicket = myScanner.nextInt();
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
