@@ -32,8 +32,12 @@ public class TheaterApp {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate date = LocalDate.parse(userDate, formatter);
 
+        //checks whether user ticket is 1 or any other number changing what is output
         if (userTicket == 1) {
             System.out.println(userTicket + " ticket reserved for " + date + " under " + lastName + ", " + firstName);
+        }
+        else {
+            System.out.println(userTicket + " tickets reserved for " + date + " under " + lastName + ", " + firstName);
         }
 
     }
