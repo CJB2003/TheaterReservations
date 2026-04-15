@@ -16,6 +16,10 @@ public class TheaterApp {
         String[] names = userName.split(" ");
         //I always like checking to see what is being split even if I know
         System.out.println(Arrays.toString(names));
+        //variables for storing first and last name from array
+        String firstName = names[0];
+        String lastName = names[1];
+
 
         //prompt user to choose a date in specific format
         System.out.print("What date will you be coming (MM/dd/yyyy): ");
@@ -29,7 +33,7 @@ public class TheaterApp {
         LocalDate date = LocalDate.parse(userDate, formatter);
 
         if (userTicket == 1) {
-            System.out.println(userTicket + " ticket reserved for " + date + " under " + );
+            System.out.println(userTicket + " ticket reserved for " + date + " under " + lastName + ", " + firstName);
         }
 
     }
